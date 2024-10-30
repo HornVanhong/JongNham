@@ -2,7 +2,7 @@
 .container {
   width: 100vw;
   height: 100vh;
-  background-image: url("/Images/backgroundjongnhamres.png");
+  background-image: url("./Images/backgroundjongnhamres.png");
   background-size: cover;
   background-position: center;
   display: flex;
