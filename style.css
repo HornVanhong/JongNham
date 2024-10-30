@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,700;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');    padding: 0;
+*{ margin: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    top: 0;
+    position: sticky;
+    z-index: 99;
+    background-color: rgb(3, 4, 4);
+    padding: 15px 10%;
+    border-bottom: 1px solid rgb(229, 226, 226);
+}
+.navbar .nav-link{
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    color: white;
+}
+.navbar-nav .nav-item:hover .dropdown-menu{
+    display: block;
+}
+
+/* icon menu */
+.icon-menu{
+    color: white;
+    font-size: 18px;
+}
+.navbar-toggler-icon{
+    background-color: white;
+    border-radius: 2px;
+}
+/* custom line menu */
+.nav-link::before{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: 0%;
+    left: 50%;
+    background-color: rgb(255, 0, 0);
+    visibility: hidden;
+    transform: translateX(-50%);
+    transition: 0.3s ease-in-out;
+}
+.nav-link:hover::before{
+    width: 100%;
+    visibility: visible;
+}
+
+/* footer */
+/* footer{
+    width: 100%;
+    height: 100px;
+    background-color: blueviolet;
+    position: fixed;
+    bottom: 0;
+} */
+
+/*============================= blog ======================================*/
+.content-blog{
+    width: 100%;
+    height: fit-content;
+    background-image: url('https://images.pexels.com/photos/8514519/pexels-photo-8514519.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.blog .title{
+    font-size: 50px;
+    text-align: center;
+    text-shadow: 3px 5px 10px rgb(255, 255, 255);
+    font-family: "Playwrite GB S", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    color: rgb(255, 255, 255);
+    /* background: linear-gradient(to top, #dfe9f3 0%, white 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text; */
+}
+
+.blog .img{
+    width: 60%;
+    height: 270px;
+    background-color: aquamarine;
+    /* border-right:2px solid ; */
+}
+.blog .img img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+.blog .card1{
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgb(250, 245, 245);
+    border-radius: 25px;
+    overflow: hidden;
+}
+.blog .description{
+    width: 40%;
+    height: 100%;
+    /* border: 2px solid black; */
+    font-size: 15px;
+    font-family: "Playwrite GB S", serif;
+    background-color: white;
+    /* background: linear-gradient(177.9deg, rgb(58, 62, 88) 3.6%, rgb(119, 127, 148) 105.8%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text; */
+
+}
+.blog .date{
+    width: 100%;
+    height: 30%;
+    /* background-color: palegoldenrod; */
+    border-bottom: 2px solid black ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.blog .comming{
+    width: 100%;
+    height: 40%;
+    /* background-color: rgb(170, 228, 238); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.blog .master{
+    width: 100%;
+    height: 30%;
+    /* background-color: palegoldenrod; */
+    border-top: 2px solid black ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
