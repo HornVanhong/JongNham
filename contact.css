@@ -69,7 +69,7 @@
   color: red;
 }
 .fa-telegram {
-  color: blue;
+  color: rgb(28, 227, 255);
 }
 .contact-title {
   font-size: 16px;
@@ -133,6 +133,12 @@
 
 .contact-form button:hover {
   background-color: #ff8c33;
+}
+.link-account {
+  text-decoration: none;
+}
+.card-img {
+  display: none;
 }
 
 /* Responsive adjustments */
@@ -200,6 +206,9 @@
     width: 100%;
     height: 300px;
   }
+  .link-account {
+    text-decoration: none;
+  }
 }
 
 @media (max-width: 480px) {
@@ -226,5 +235,8 @@
   .contact-form button {
     height: 50px;
     font-size: 14px;
+  }
+  .link-account {
+    text-decoration: none;
   }
 }
