@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="/css/contact.css">
+</head>
+<body>
+  <div id="header-placeholder"></div>
+
+  <main>
+    <div class="container">
+      <div class="form">
+        <h3>Student Form</h3>
+        
+        <div class="form-group" id="flex">
+          <label for="name" class="label">Name</label>
+          <input type="text" id="name" class="layoutinput"/>
+        </div>
+
+        <div class="form-group gender">
+          <span class="label">Gender</span>
+          <input type="radio" id="female" name="gender" value="Female" />
+          <label for="female">Female</label>
+          <input type="radio" id="male" name="gender" value="Male" />
+          <label for="male">Male</label>
+        </div>
+
+        <div class="form-group" id="flex">
+          <label for="year" class="label">Year</label>
+          <input type="text" id="year" class="layoutinput"/>
+        </div>
+
+        <div class="form-group" id="flex">
+          <label for="group" class="label">Group</label>
+          <select id="group" class="layoutinput">
+            <option value="E1">E1</option>
+            <option value="E2">E2</option>
+            <option value="E3">E3</option>
+            <option value="E4">E4</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <button id="addButton" class="button">Add</button>
+        </div>
+
+        <div class="form-group">
+          <textarea id="review" rows="4" class="layoutinput"></textarea>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="/main.js"></script>
+  <script src="/js/contact.js"></script>
+  <script>
+    includeHTML("../components/header.html", "header-placeholder");
+    includeHTML("../components/footer.html", "footer-placeholder");
+  </script>
+</body>
+</html>

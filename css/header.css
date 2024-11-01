@@ -1,0 +1,69 @@
+header {
+    width: 100%;
+    background-color: #e4e4e4;
+    padding: 0 5rem;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+  }
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    
+}
+.navbar .logo{
+    display: flex;
+    align-items: center;
+    color: #000;
+    font-weight: 800;
+}
+.navbar .logo img{
+    width: 40px;
+}
+.navbar .logo a{
+    color: #000;
+    font-weight: 800;
+    
+}
+.navbar .nav-links{
+    display: flex;
+    
+}
+.navbar .nav-links li{
+    padding: 0 15px;
+    
+}
+.navbar .nav-links li a{
+    color: #000;
+    font-weight: 500;
+    font-size: 17px;
+    
+}
+.navbar .nav-links li a:hover{
+    color: red;
+    
+}
+
+.navbar .contact{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .contact .contact-box{
+    /* letter-spacing: 1px; */
+    font-weight: 700;
+    color: #fff;
+    font-size: 13px;
+    text-transform: uppercase;
+    background: #000;
+    border-radius: 30px;
+    padding: 10px 35px;
+    margin: 0 10px;
+}
+.navbar .contact i{
+    padding: 0 5px;
+    color: #000;
+    font-size: 25px;
+}
